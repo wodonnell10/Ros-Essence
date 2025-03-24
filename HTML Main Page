@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>EVR Home Page</title>
+   <meta charset="utf-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   crossorigin="anonymous">
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-
+   q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-
+   UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+   crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-
+   JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./RoseEssentialsWebSite.html"><img src="https://i.pinimg.com/736x/b4/c3/47/b4c347d2e320e23ca57b6afae4afff45.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./RoseEssentialsWebSite.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./RoseEssentialsAboutPage.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <p class = "p1"><strong>Rosé Essentials</strong></p>
+
+    <footer>Copyright &copy 2025 Rosé Essentials</footer>
+
+   <style>
+    body {
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+    }
+    .p1 {
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: #c69d6e;
+        font-family: serif;
+        text-align: center;
+        font-size: 1.7em;
+        background-color: #1e1e1c;
+        color: white;
+    }
+    .navbar {
+        height: 100px;
+        background-color: #1e1e1c;
+        z-index: 1030;
+        position: relative;
+    }
+    .navbar-brand img {
+        height: 70px;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 15px;
+        color: white !important;
+        text-align: center;
+    }
+    .navbar-collapse {
+        background-color: #1e1e1c;
+        z-index: 1030;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 250px;
+        font-family: serif;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background-color: #1e1e1c;
+        font-size: 1.2em;
+        font-family: serif;
+        text-align: center;
+        z-index: 1030;
+    }
+    @media (max-width: 576px) {
+        .ap, .bp, .dp, ul {
+            padding-left: 15px;
+    }
+        .ap, .bp, .dp, ul li {
+            font-size: 1em;
+    }
+    }
+   </style>
+</body>
+</html>
