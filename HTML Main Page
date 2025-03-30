@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-   <title>Rosé Essentials</title>
+   <title>Home | Rosé Essentials</title>
    <meta charset="utf-8"> 
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Bootstrap CSS -->
@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./rose essent.html"><img src="https://i.pinimg.com/736x/b4/c3/47/b4c347d2e320e23ca57b6afae4afff45.jpg"></a>
+        <a class="navbar-brand" href="./RoseEssentialsWebSite.html"><img src="https://i.pinimg.com/736x/b4/c3/47/b4c347d2e320e23ca57b6afae4afff45.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,11 +48,37 @@
     </nav>
 
     <p class = "p1"><strong>Rosé Essentials</strong></p>
+  
+  <div class = "content-container">
+    <div class = "desc-text">
+      <div class = "wel-head">
+        <h2>Welcome to Rosé Essentials</h2>
+      </div>
+      <div class = "wel-para">
+        <p>"Discover a curated selection of luxurious rose-themed products. 
+          From clothing to fragrances, we have everything you need to indulge 
+          in elegance. Our goal is to provide sustainable and luxurious products 
+          that satisfy our customers in every way possible. At Rosé Essentials, we 
+          believe that beauty and sophistication should be accessible to everyone. 
+          Our collection includes exquisite handbags, stylish accessories like pins 
+          and hairpins, elegant mugs, trendy shirts, and much more. Whether you're 
+          looking for a statement piece or a subtle touch of floral charm, we have 
+          something special just for you."</p>
+      </div>
+    </div>
+
+    <div class = "image-container">
+      <img src = "https://i.ebayimg.com/images/g/VGUAAOSwZPxkIDnk/s-l400.jpg" alt = "image 1">
+      <img src = "https://i.ebayimg.com/images/g/Gx4AAOSwuptl--0V/s-l400.jpg" alt = "image 2">
+      <img src = "https://img.ankorstore.com/products/images/4789653-47e88b4033474f.jpg?auto=format%2Ccompress&fm=pjpg&dpr=2&h=200&w=200&fit=crop&crop=faces&force_format=webp" alt = "image 3">
+    </div>
+  </div>
 
     <footer>Copyright &copy 2025 Rosé Essentials</footer>
 
    <style>
     body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/023/386/847/non_2x/realistic-rose-gold-silk-background-bronze-foil-realistic-texture-gradient-set-rose-golden-metal-collection-generate-ai-free-photo.jpg');
         background-repeat: no-repeat;
         background-attachment:fixed;
         background-size: cover;
@@ -91,6 +117,48 @@
         font-size: 1.1em;
         font-weight: bold;
     }
+    .content-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px; /* adds space between elements */
+        flex-wrap: wrap; /* makes wrapping on smaller screens */
+        margin-top: 50px;
+        padding: 20px;
+        max-width: 1200px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .desc-text {
+        width: 400px;
+        border: 2px solid #1e1e1c; 
+        padding: 15px;
+        background-color: #1e1e1c;
+        color: white;
+        font-family: serif;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: #c69d6e;
+        font-size: 1em;
+        border-radius: 8px;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .image-container {
+        display: flex;
+        gap: 15px; 
+        width: 400px;
+        height: auto;
+        border-radius: 8px;
+    }
+    .image-container img {
+        transition: transform .2s;
+    }
+    .image-container img:hover {
+        transform: scale(1.1);
+      }
+    .wel-para {
+        font-size: 1.1em;
+    }
     footer {
         position: fixed;
         bottom: 0;
@@ -103,12 +171,29 @@
         z-index: 1030;
     }
     @media (max-width: 576px) {
-        .ap, .bp, .dp, ul {
-            padding-left: 15px;
+      .ap, .bp, .dp, ul {
+          padding-left: 15px;
     }
-        .ap, .bp, .dp, ul li {
-            font-size: 1em;
+      .ap, .bp, .dp, ul li {
+          font-size: 1em;
     }
+    }
+    @media (max-width: 1024px) {
+      .content-container {
+        flex-direction: column; /*makes it stack vertically on smaller screens*/
+        align-items: center;
+      }
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-container img {
+        width: 90% /*this adjusts the width for smaller screens*/
+      }
+      .desc-text {
+        width: 90%;
+        margin-left: 0;
+      }
     }
    </style>
 </body>
